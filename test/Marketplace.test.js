@@ -18,8 +18,21 @@ contract('Marketplace', (accounts) => {
 
     it('has a name', async () => {
       const name = await marketplace.name()
-      assert.equal(name, 'Dapp University Marketplace')
+      assert.equal(name, 'KK Marketplace')
     })
 
+  })
+
+  describe('products', async () => {
+    let result, productCount
+
+    before(async () => {
+      result = await marketplace.createProduct('KK Random Item', web3.utils.toWei('1', 'Ether'))
+      productCount = await marketplace.productCount()
+    })
+
+    it('creates a product', async () => {
+      assert.equal(productCount, 1);
+    })
   })
 })
