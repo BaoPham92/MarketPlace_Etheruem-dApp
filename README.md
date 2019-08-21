@@ -11,3 +11,5 @@ Tech Stack:
 2. NodeJS [NodeJS](https://nodejs.org/en/)
 3. Solidity [Solidity](https://github.com/ethereum/solidity)
 4. Web3JS [Web3JS](https://github.com/ethereum/web3.js/)
+5. Mocha [MochaJS](https://mochajs.org/)
+6. Chain Assertions [ChaiJS](https://www.chaijs.com/)
